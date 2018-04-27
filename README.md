@@ -6,7 +6,7 @@ In this sample app, variable fonts are loaded up and some of their properties ch
 A variable font allows you to specify certain attributes of a font at runtime. Which means you do not need to package multiple font 
 files, therefore saving download size. 
 
-![](art/variable_fonts_2.gif)
+![](art/variable_fonts_3.gif)
 
 ## Benefits of Variable Fonts
 
