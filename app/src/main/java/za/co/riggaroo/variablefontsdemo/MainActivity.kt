@@ -36,25 +36,24 @@ class MainActivity : AppCompatActivity() {
         seekBarT1.onProgressChanged { progress ->
             currentMotionValue = progress.toFloat() / 100f
             setZyconFont(currentMotionValue)
+
         }
     }
 
     private fun setZyconFont(progress: Float) {
-        val builderNew = Typeface.Builder(assets, "fonts/Zycon.ttf")
+        val builder = Typeface.Builder(assets, "fonts/Zycon.ttf")
 
-        builderNew.setFontVariationSettings("'M1  ' $progress")
-        val newTypeface = builderNew.build()
+        builder.setFontVariationSettings("'M1  ' $progress")
 
-        textViewFontZycon.typeface = newTypeface
+        textViewFontZycon.typeface = builder.build()
     }
 
     private fun setFontWidthWeight(width: Int, weight: Int) {
-        val builderNew = Typeface.Builder(assets, "fonts/MutatorSans.ttf")
+        val builder = Typeface.Builder(assets, "fonts/MutatorSans.ttf")
 
-        builderNew.setFontVariationSettings("'wght' $weight, 'wdth' $width")
-        val newTypeface = builderNew.build()
+        builder.setFontVariationSettings("'wght' $weight, 'wdth' $width")
 
-        textViewFont.typeface = newTypeface
+        textViewFont.typeface = builder.build()
     }
 
     private fun setupZyconFontAnimation() {
