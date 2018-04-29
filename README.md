@@ -1,4 +1,4 @@
-# Variable Fonts - Android P Demo
+# Variable Fonts - Android O Demo
 
 In this sample app, variable fonts are loaded up and some of their properties changed at runtime.
 
@@ -16,7 +16,7 @@ files, therefore saving download size.
 
 ## Gotchas
 
-- Variable Fonts are only available on Android P and are not yet a part of the Support Library. 
+- Variable Fonts are only available on Android O and are not yet a part of the Support Library. 
 - If you are animating the font between settings, this may cause performance issues
 
 ## More information & Thanks To:
